@@ -8,11 +8,59 @@ body {
     background-color: rgb(78, 8, 63);
 }
 
-img {
+.logs {
+    width: 30px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 5px;
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     left: 50%;
-    border-radius: 100px;
-    transform: translate(-50%, -50%);
+    transform: rotate(80deg);
 }
 
+.logs-1 {
+    width: 30px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: rotate(-75deg);
+}
+
+.flame-1 {
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    animation: fire 1s ease-in-out infinite;
+    border-radius: 10px;
+}
+
+.flame-2 {
+    width: 20px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    animation: fire 2s ease-in-out infinite;
+    border-radius: 10px;
+}
+
+@keyframes fire {
+    0% {
+        left: 50%;
+        top: 75%;
+    
+    }
+
+    20% {
+        left: 50%;
+        top: 65%;
+    }
+}
